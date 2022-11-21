@@ -1,0 +1,394 @@
+/* ====================== GERAIS ======================  */
+html {
+    font-size: 6.25%;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../Imagens/background_com_cor.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ====================== HEADER ======================  */
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem;
+    color: #ffff;
+    height: 50rem;
+    margin-bottom: 20rem;
+    background-color: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    border-bottom: solid rgba(255, 255, 255, 0.219) .5rem;
+
+}
+
+.header h2 {
+    margin-left: 20rem;
+    font-size: 30rem;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15rem;
+
+}
+
+.header nav a {
+    color: #ffff;
+    text-decoration: none;
+    margin: 0 15rem;
+    font-size: 20rem;
+    position: relative;
+
+}
+
+.header-nav a::before {
+    content: '';
+    position: absolute;
+    background: rgb(0, 71, 130);
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(0, 71, 130, 0.46600358893557425) 0%, rgba(0, 0, 0, 0) 53%);
+    width: 0%;
+    height: 35rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+
+.header-nav a:hover::before {
+    width: 100%;
+}
+
+
+/* ====================== MAIN ======================  */
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30rem;
+    padding-bottom: 60rem;
+    flex-grow: 1;
+    color: #ffff;
+
+}
+
+
+/* ====================== SECTION 1 ======================  */
+section:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    max-width: 1266.27rem;
+    width: 92.7vw;
+
+
+}
+
+
+.section-info h1 {
+    width: fit-content;
+    padding: 2rem 5rem;
+    border-radius: 9rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom: solid rgba(255, 255, 255, 0.219) .5rem;
+    margin-bottom: 15rem;
+    background-color: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.39);
+    font-size: 35rem;
+}
+
+.section-info p,
+.section-info strong {
+    font-size: 20rem;
+}
+
+.section-info p {
+    border-radius: 9rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom: solid rgba(255, 255, 255, 0.219) .5rem;
+    margin-bottom: 15rem;
+    padding: 8rem;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.39);
+}
+
+
+/* ====================== SECTION 2 ======================  */
+section:nth-child(2) {
+    display: flex;
+    margin-top: 30rem;
+    max-width: 1266.27rem;
+    /* height: 380rem;
+    width: 92.7vw; */
+
+
+}
+
+/* ====================== FORM ======================  */
+.div-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 380rem;
+    border-top-left-radius: 9rem;
+    border-bottom-left-radius: 9rem;
+    width: 250rem;
+    background-color: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(5.22px) saturate(2.75);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.39);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20rem;
+    height: 380rem;
+    border-top: solid rgba(255, 255, 255, 0.219) .5rem;
+    padding-top: 35rem;
+}
+
+.div-form h2 {
+    margin-bottom: 10rem;
+    margin-top: 15rem;
+    font-size: 28rem;
+}
+
+.form label:nth-child(1) {
+    margin-right: 165rem;
+    font-size: 20rem;
+}
+
+.form label {
+    margin-right: 150rem;
+    font-size: 20rem;
+}
+
+.form input[type=number] {
+    font-size: 15rem;
+    color: #ffff;
+    border-bottom-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    margin-bottom: 40rem;
+    margin-top: 9rem;
+    background-color: rgb(58, 0, 0);
+    backdrop-filter: blur(5.22px) saturate(2.75);
+    outline: none;
+    border: none;
+    padding: 7rem 12rem;
+}
+
+.form input[type=number]:focus {
+    transition: all ease .5s;
+    background-color: rgb(88, 0, 0);
+    box-shadow: 2px 7px 5px rgba(255, 255, 255, 0.103);
+}
+
+
+.form .btn {
+    color: #ffff;
+    font-size: 20rem;
+    padding: 4rem 15rem;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    border: none;
+    border-bottom-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    background-color: rgba(80, 79, 79, 0.24);
+    backdrop-filter: blur(5.22px) invert(2px);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.226);
+
+
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.445);
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    transition: all 0.5s ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+
+}
+
+
+/* ====================== TELA RESULTADO ======================  */
+.div-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    width: 74.4vw;
+    max-width: 1015.3rem;
+    border-top-right-radius: 9rem;
+    border-bottom-right-radius: 9rem;
+    height: 380rem;
+    border-left: solid rgba(255, 255, 255, 0.219) .5rem;
+    background-color: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(5.22px) saturate(2.75);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.39);
+}
+
+.div-result h2 {
+    font-size: 38rem;
+}
+
+
+.div-result p {
+    font-size: 18rem;
+}
+
+
+
+/* ====================== FOOTER ====================== */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.747);
+    backdrop-filter: blur(5.22px) saturate(2.75);
+    padding: 12rem;
+    border-top: solid rgba(255, 255, 255, 0.219) .5rem;
+
+}
+
+.footer img {
+    margin: 0 12rem;
+    height: 30rem;
+
+}
+
+
+.footer a {
+    color: #ffff;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.footer a:nth-child(1):before {
+    content: '';
+    position: absolute;
+    background: rgb(0, 130, 11);
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(0, 130, 17, 0.466) 0%, rgba(0, 0, 0, 0) 53%);
+    width: 0%;
+    height: 40rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.footer a:nth-child(2):before {
+    content: '';
+    position: absolute;
+    background: rgb(64, 27, 99);
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(85, 16, 124, 0.466) 0%, rgba(0, 0, 0, 0) 53%);
+    width: 0%;
+    height: 40rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.footer a:nth-child(3):before {
+    content: '';
+    position: absolute;
+    background: rgb(255, 148, 0);
+    background: linear-gradient(0deg, rgba(255, 148, 0, 0.5528383228291316) 3%, rgba(191, 53, 201, 0.46040134803921573) 16%, rgba(97, 0, 255, 0) 34%);
+    border-radius: 1rem;
+    width: 0%;
+    height: 40rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+.footer a:nth-child(4):before {
+    content: '';
+    position: absolute;
+    background: rgb(0, 71, 130);
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(0, 71, 130, 0.46600358893557425) 0%, rgba(0, 0, 0, 0) 53%);
+    width: 0%;
+    height: 40rem;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+
+.footer a:hover::before {
+    width: 100%;
+}
+
+
+/* ====================== JS ====================== */
+
+#div-pos-result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 50rem;
+}
+
+#titulo-seu-imc {
+    margin-bottom: 10rem; 
+}
+
+#subtitulo-nivel-imc{
+    margin-bottom: 50rem;
+    font-size: 25rem;
+}
+
+#texto-seu-imc{
+    width:650rem;
+    margin-bottom: 40rem;
+    padding:8rem;
+    
+}
+

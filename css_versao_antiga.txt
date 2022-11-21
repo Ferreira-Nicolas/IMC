@@ -1,0 +1,296 @@
+/*                   RESETANDO CSS                 */
+html {
+    font-size: 6.25%;
+   
+    
+    
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    overflow-x: hidden;   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('../Imagens/background_com_cor.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    
+}
+
+
+
+
+.header {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.582);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    box-shadow: -1px 2px 7px 5px rgba(0, 0, 0, 0.39);
+    grid-column: 1/9;
+    font-size: 16rem;
+    border-bottom: solid 1rem rgba(255, 255, 255, 0.13);
+}
+
+.header h2 {
+    color: white;
+    margin: 0 0 0 25rem;
+    font-size: 35rem;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    height: 65rem;
+
+}
+
+.header-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20rem;
+    margin: auto 30rem;
+    width: 115.3rem;
+    height: 65rem;
+    position: relative;
+
+}
+
+
+.header-nav a:nth-child(3) {
+    width: 130.3rem;
+}
+
+
+.header-nav a::before {
+    content: '';
+    position: absolute;
+    background: rgb(0, 71, 130);
+    border-radius: 1rem;
+    background: linear-gradient(0deg, rgba(0, 71, 130, 0.46600358893557425) 0%, rgba(0, 0, 0, 0) 53%);
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+
+.header-nav a:hover::before {
+    width: 100%;
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 0;
+    
+    font-size: 20rem;
+}
+
+.section-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: white;
+    padding: 50rem 5.86vw 25rem 5.86vw;
+    border-bottom: solid 1rem rgba(255, 255, 255, 0.116);
+
+}
+
+.section-info h1 {
+    display: inline-block;
+    min-width: 35rem;
+    padding: 2rem 5rem;
+    border-radius: 9rem;
+    margin: 0 0 10rem 0;
+    background-color: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    box-shadow: -1px 2px 7px 5px rgba(0, 0, 0, 0.39);
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom: solid 1rem rgba(255, 255, 255, 0.322);
+}
+
+.section-info p {
+    display: inline-block;
+    text-align: justify;
+    width: 89.220vw;
+    padding: 8rem 10rem;
+    border-radius: 9rem;
+    background-color: rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    box-shadow: -1px 2px 7px 5px rgba(0, 0, 0, 0.39);
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-bottom: solid 1rem rgba(255, 255, 255, 0.247);
+}
+
+.section-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 25rem 5.86vw 25rem 5.86vw;
+    border-bottom: solid 1rem rgba(255, 255, 255, 0.116);
+
+}
+
+.div-form {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    width: 19.3vw;
+    border-top-left-radius: 9rem;
+    border-bottom-left-radius: 9rem;
+    background-color: rgba(126, 126, 126, 0.124);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.39);
+    height: 320rem;
+
+}
+
+.form {
+    padding: 0vw 1vw 1vw 1vw;
+    width: 100em;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem
+}
+
+.form h2 {
+    margin: 15rem auto 0 auto;
+    font-size: 28rem;
+}
+
+.form hr {
+    color: rgba(255, 255, 255, 0.205);
+}
+
+
+.form label {
+    margin: 0 0 0 8rem;
+}
+
+.form input[type=number] {
+    color: white;
+    border: none;
+    width: 220rem;
+    max-width: 220rem;
+    border-bottom-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    background-color: rgba(122, 122, 122, 0.24);
+    backdrop-filter: blur(5.22px) invert(2px);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.226);
+    height: 30rem;
+    margin: 0 auto;
+    padding: 12rem;
+
+}
+
+.form input[type=number]:focus {
+    outline: none;
+    border-bottom-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    background-color: rgba(34, 2, 2, 0.521);
+    backdrop-filter: blur(10.22px) invert(2px);
+    box-shadow: 2px 3px 10px rgba(255, 255, 255, 0.288);
+    transition: all ease 500ms;
+
+}
+
+
+
+
+.form .btn {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20rem;
+    cursor: pointer;
+    margin: auto;
+    width: 10em;
+    border: none;
+    border-bottom-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    background-color: rgba(80, 79, 79, 0.24);
+    backdrop-filter: blur(5.22px) invert(2px);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.226);
+    height: 30rem;
+    position: relative;
+
+
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.445);
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-bottom-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    transition: all 0.5s ease;
+}
+
+.btn:hover::before {
+    width: 100%;
+
+}
+
+
+.div-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20rem;
+    width: 69.92vw;
+    border-top-right-radius: 9rem;
+    border-left: solid 1rem rgba(255, 255, 255, 0.116);
+    border-bottom-right-radius: 9rem;
+    background-color: rgba(126, 126, 126, 0.124);
+    backdrop-filter: blur(5.22px) saturate(2.25);
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.39);
+    height: 320rem;
+}
+
+
+.div-result h2 {
+    font-size: 38rem;
+}
+
+
+.div-result p {
+    font-size: 18rem;
+}
+
+
+footer{
+    background-color: crimson;
+    font-size:24rem;
+}
+
+.footer-content{
+    display: flex;
+    
+}
