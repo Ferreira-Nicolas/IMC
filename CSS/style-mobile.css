@@ -1,0 +1,132 @@
+/* ====================== MOBILE ====================== */
+
+@media (max-width:811px) {
+
+    body {
+        background-image: url('../Imagens/background-mobile.svg');
+        background-size: cover;
+    }
+
+
+    /* header */
+
+    .header {
+        justify-content: center;
+        border-bottom: solid rgba(255, 255, 255, 0.219) 2rem;
+
+    }
+
+    .header h2 {
+        font-size: 30rem;
+    }
+
+    .header nav {
+        display: none;
+    }
+
+    /* main */
+    main {
+        padding: 0rem;
+        padding-bottom: 60rem;
+    }
+
+    /* section 1 */
+
+    section:nth-child(1) {
+        align-items: center;
+    }
+
+    .section-info h1 {
+        border: solid rgba(255, 255, 255, 0.219) .5rem;
+        border-bottom: solid rgba(255, 255, 255, 0.219) 2rem;
+    }
+
+    .section-info p {
+        border: solid rgba(255, 255, 255, 0.219) .5rem;
+        border-bottom: solid rgba(255, 255, 255, 0.219) 2rem;
+    }
+
+    /* section 2 */
+    section:nth-child(2) {
+        flex-wrap:wrap;
+        width: 92.7vw;
+    }
+    
+    /* form */
+    .div-form{
+        width: 92.7vw;
+        border: solid rgba(255, 255, 255, 0.219) .5rem;
+        border-radius: 9rem;
+        border-bottom-left-radius:0rem;
+        border-bottom-right-radius:0rem;
+        border-bottom: solid rgba(255, 255, 255, 0.219) 2rem;
+        
+    }
+
+    .div-form h2{
+        font-size:40rem;
+    }
+    
+    .form{
+        width: 92.7vw;
+        
+    }
+    .form input[type=number] {
+        width:215.8rem;
+        background-color: rgb(10, 10, 10);
+    
+    }
+    
+    .form input[type=number]:focus {
+        transition: all ease .5s;
+        background-color: rgb(51, 51, 51);
+        box-shadow: 2px 7px 5px rgba(255, 255, 255, 0.103);
+    }
+    /* tela-result */
+    .div-result{
+        height:auto;
+        padding: 20rem;
+        min-height: 380rem;
+        width: 92.7vw;
+        border: solid rgba(255, 255, 255, 0.219) .5rem;
+        border-radius: 0rem;      
+        border-bottom: solid rgba(255, 255, 255, 0.219) 2rem;
+    }
+    .div-result h2 {
+        text-align: center;
+        font-size: 30rem;
+        margin-bottom:10rem;
+    }
+    
+    
+    .div-result p {
+        text-align: center;
+        font-size: 15rem;
+    }
+    /* js */
+    #div-pos-result {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: justify;
+        padding: 50rem;
+    }
+    
+    #titulo-seu-imc {
+        font-size:30rem;
+        margin-bottom: 15rem; 
+    }
+    
+    #subtitulo-nivel-imc{
+        margin-bottom: 50rem;
+        font-size: 25rem;
+    }
+    
+    #texto-seu-imc{
+        width:auto;
+        margin-bottom: 0rem;
+        padding:8rem;
+        
+    }
+    
+}

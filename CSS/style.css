@@ -17,11 +17,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-image: url('../Imagens/background_com_cor.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
     /* background-color: black; */
     font-family: 'Montserrat', sans-serif;
 }
+
+
 
 
 /* ====================== HEADER ======================  */
@@ -193,6 +195,8 @@ section:nth-child(2) {
 
 .form input[type=number] {
     font-size: 15rem;
+    width:15.8vw;
+    max-width:215.87rem;
     color: #ffff;
     border-bottom-left-radius: 9rem;
     border-top-right-radius: 9rem;
@@ -376,6 +380,7 @@ section:nth-child(2) {
     padding: 50rem;
 }
 
+
 #titulo-seu-imc {
     margin-bottom: 10rem; 
 }
@@ -392,3 +397,7 @@ section:nth-child(2) {
     
 }
 
+#erro-subtitulo{
+    font-size:25rem;
+    padding:8rem;
+}

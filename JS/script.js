@@ -50,10 +50,7 @@ function defineIMC() {
         subtituloErro.innerHTML = `Dados invalidos!`
         textoErro.innerHTML = `Você digitou algum dado invalido, tente de novo!`
 
-        div.style.backgroundColor = 'rgba(252, 0, 0, 0.2)'
-        div.style.borderTopRightRadius = '12px'
-        div.style.borderBottomRightRadius = '12px'
-
+        div.style.backgroundColor = ' rgba(78, 0, 0, 0.582)'
         div.innerHTML = ''
         div.append(subtituloErro)
         div.append(textoErro)
